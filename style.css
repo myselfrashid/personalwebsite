@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: #cfd7c7;
+  color: black;
+  overflow: hidden;
+}
+
+.including-content {
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242a2d;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: transparent;
+}
+
+.nav-link {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-links {
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  display: inline-block;
+}
+
+.nav-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in;
+}
+
+.nav-links:hover::after {
+  width: 100%;
+}
+
+.nav-links:focus::after {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: calc(100vh - 75px);
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: title;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.heading1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  animation: title;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.button-container > a {
+  background-color: #242a2d;
+  color: white;
+  text-transform: uppercase;
+  height: 45px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.button-container > a::after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5rem;
+}
+
+.button-container > a:hover::after {
+  bottom: 0;
+  width: 80%;
+}
+
+.button-container > a:hover {
+  background-color: #333a3d;
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.footer-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.footer {
+  background-color: #242a2d;
+  height: 70px;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.footer > p {
+  font-size: smaller;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .including-content {
+    padding: 0px 20px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    z-index: 20;
+    background-color: #323a3d;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 20px 40px;
+    transform: translateX(100%);
+    transition: transform 750ms ease-in-out;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+  }
+
+  .nav-links::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in;
+  }
+  .nav-links:hover::after {
+    width: 100%;
+  }
+
+  .nav-links:focus::after {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: transparent;
+  }
+
+  .true {
+    transform: translateX(0%);
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    transform: all 0.3s ease;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 75px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    animation: title;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    padding: 40px 10px;
+    height: 100%;
+  }
+
+  .heading1 {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    animation: title;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  .toggle .line1 {
+    transform: rotate(45deg) translate(6px, 6px);
+    transition: all 0.25s ease-in;
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(-45deg) translate(7px, -7px);
+    transition: all 0.25s ease-in;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer {
+    height: 70px;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #242a2d;
+  }
+
+  .footer > p {
+    font-size: 10px;
+    color: white;
+  }
+}
