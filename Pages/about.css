@@ -6,8 +6,11 @@
   box-sizing: border-box;
 }
 
-main {
-  background: #cfd7c7;
+body {
+  background: #ffd100;
+}
+
+.main-content {
   color: black;
   overflow: hidden;
 }
