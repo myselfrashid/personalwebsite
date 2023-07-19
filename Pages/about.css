@@ -38,11 +38,45 @@ p {
   flex-direction: row;
   color: white;
   background-color: transparent;
+  gap: 50px;
 }
 
 .nav-link {
   text-decoration: none;
   background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.drop-down {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  top: 75px;
+  background-color: #242a2d;
+  gap: 20px;
+  padding: 20px;
+  z-index: 10;
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  opacity: 0;
+  transform: translateY(0.5rem);
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0rem);
+  visibility: visible;
+}
+
+.drop-down > a {
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #ffd100;
 }
 
 .nav-links {
@@ -50,7 +84,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
-  color: white;
+  color: #ffd100;
   display: inline-block;
 }
 
@@ -59,7 +93,7 @@ p {
   display: block;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: #ffd100;
   transition: width 0.3s ease-in;
 }
 
@@ -134,11 +168,39 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    color: white;
+    color: #242424;
     padding: 20px 40px;
     transform: translateX(100%);
     transition: transform 750ms ease-in-out;
     font-size: 1rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .drop-down {
+    background-color: #242a2d;
+    padding: 20px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .drop-down > a {
+    padding: 10px 0px;
+    color: #ffd100;
   }
 
   .nav-links {
@@ -146,7 +208,7 @@ main {
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
-    color: white;
+    color: #ffd100;
     display: inline-block;
   }
 

@@ -30,3 +30,21 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+let link = document.getElementsByClassName("nav-link")[1];
+let dropDown = document.querySelector(".drop-down");
+
+const toggleDropdown = function () {
+  dropDown.classList.toggle("show");
+};
+
+link.addEventListener("click", function (e) {
+  e.stopPropagation();
+  toggleDropdown();
+});
+
+document.documentElement.addEventListener("click", function () {
+  if (dropDown.classList.contains("show")) {
+    toggleDropdown();
+  }
+});
