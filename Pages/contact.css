@@ -139,12 +139,12 @@ body {
   width: 100%;
 }
 
-main {
-  padding: 20px 40px;
+.main-wrapper {
+  padding: 40px 40px 20px 40px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  height: 100%;
+  height: 100vh;
 }
 
 p {
@@ -154,14 +154,14 @@ p {
 
 .heading {
   font-family: "Rubik", sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
+  text-align: center;
   color: #325daf;
+  font-size: 2.5rem;
 }
 
 .form-wrapper {
   display: flex;
-  width: 300px;
+  width: 100%;
   flex-direction: column;
   height: 100%;
 }
@@ -169,22 +169,78 @@ p {
 .form-control {
   display: flex;
   gap: 20px;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px 40px;
+}
+
+.form-control span{
+  padding: 5px 0px;
+}
+
+.form-control span label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.form-control textarea{
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  height: 140px;
+}
+
+.form-control textarea:focus{
+  outline: 2px solid #325daf;
+}
+
+.form-control input {
+  height: 40px;
+  width: 100%;
+  caret-color: #325daf;
+  padding: 0px 10px;
+  border: none;
+  outline: none;
+}
+
+input:focus{
+  outline: 2px solid #325daf;
+}
+
+
+.form-control input::placeholder{
+  padding: 5px 0px;
+  opacity: 0.8;
+}
+
+.left-form {
+  display: flex;
   flex-direction: column;
+  width: 48%;
+  padding: 5px 0px;
 }
 
-.form-control > input {
-  height: 30px;
-  border: 1px solid #325daf;
-  padding: 5px 20px;
+.left-form div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
 }
 
-.form-control > select {
-  height: 30px;
-  border: 1px solid #325daf;
-  padding: 5px 20px;
+.right-form {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 5px 0px;
+  margin-left: 40px;
 }
 
-.form-control > button {
+.right-form div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+
+.my-button {
   height: 30px;
   width: 100px;
   border: 1px solid #325daf;
@@ -193,6 +249,12 @@ p {
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
   background-color: #ffffff;
+}
+
+.my-button:hover {
+  color: #ffffff;
+  background-color: #325daf;
+  transition: all 0.3s;
 }
 
 .footer-wrapper {

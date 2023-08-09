@@ -160,14 +160,14 @@ main {
 
 .main {
   font-size: 2.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
   text-align: center;
   color: #325daf;
 }
 
 .heading {
-  font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
   color: #325daf;
 }
 
@@ -221,6 +221,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-family: "Rubik", sans-serif;
 }
 
 .small-headings-flex {

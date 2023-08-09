@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHURUQ Management Consultancy</title>
     <link rel="stylesheet" href="./contact.css">
-    <script defer src="../script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -67,18 +67,55 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-wrapper">
         <h1 class="heading">Contact Us</h1>
         <section class="form-wrapper">
             <form class="form-control">
-                <input placeholder="Email Address"></input>
-                <input placeholder="Phone Number"></input>
-                <select>
-                    <option>Query 1</option>
-                    <option>Query 2</option>
-                    <option>Query 3</option>
-                </select>
-                <button type="submit">Submit</button>
+                <div class="left-form">
+                    <div>
+                        <span>
+                            <label>Name</label>
+                        </span>
+                        <span>
+                            <input type="text" placeholder="Your Name"></input>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <label>Email</label>
+                        </span>
+                        <span>
+                            <input type="text" placeholder="name@email.com"></input>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <label>Contact</label>
+                        </span>
+                        <span>
+                            <input type="tel" placeholder="+971XXXXXXXXXX"></input>
+                        </span>
+                    </div>
+                </div>
+                <div class="right-form">
+                    <div>
+                        <span>
+                            <label>Subject</label>
+                        </span>
+                        <span>
+                            <input type="text" placeholder="Purpose"></input>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <label>Message</label>
+                        </span>
+                        <span>
+                            <textarea></textarea>
+                        </span>
+                    </div>
+                    <input class="my-button" type="submit"></input>
+                </div>
             </form>
         </section>
     </main>
