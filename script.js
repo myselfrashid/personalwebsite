@@ -31,7 +31,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-let link = document.getElementsByClassName("nav-link")[1];
+let link = document.getElementsByClassName("nav-link")[2];
 let dropDown = document.querySelector(".drop-down");
 
 const toggleDropdown = function () {
@@ -48,3 +48,28 @@ document.documentElement.addEventListener("click", function () {
     toggleDropdown();
   }
 });
+
+let images = [
+  "./Assets/background.jpg",
+  "./Assets/background1.jpg",
+  "./Assets/background2.jpg",
+  "./Assets/background3.png",
+];
+
+let index = 0;
+const backgroundImage = document.querySelector(".background-image");
+
+const change = () => {
+  backgroundImage.src = images[index];
+  index == images.length-1 ? (index = 0) : index++;
+};
+
+
+window.onload = function () {
+  if (backgroundImage) {
+    setInterval(change, 5000);
+  }
+  else{
+    return
+  }
+};

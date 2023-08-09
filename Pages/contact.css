@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #ffd100;
+  background: #82aaf5;
   color: black;
 }
 
@@ -16,17 +16,18 @@ body {
   flex-direction: row;
   height: 75px;
   width: 100%;
-  color: white;
+  color: #325daf;
   justify-content: space-between;
   align-items: center;
-  background-color: #242a2d;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
+  padding: 0px 20px;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: #325daf;
   background-color: transparent;
 }
 
@@ -63,7 +64,7 @@ body {
   flex-direction: column;
   align-items: left;
   top: 75px;
-  background-color: #242a2d;
+  background-color: #ffffff;
   gap: 20px;
   padding: 20px;
   z-index: 10;
@@ -71,6 +72,33 @@ body {
   opacity: 0;
   transform: translateY(0.5rem);
   visibility: hidden;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  height: 75px;
+}
+
+.social-media {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.social-media-button > a > img {
+  height: 40px;
+}
+
+.social-media-container {
+  display: none;
+}
+
+.logo > img {
+  height: 75px;
 }
 
 .show {
@@ -82,7 +110,7 @@ body {
 .drop-down > a {
   padding: 10px 0px;
   text-decoration: none;
-  color: #ffd100;
+  color: #325daf;
 }
 
 .nav-links {
@@ -90,7 +118,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   background-color: transparent;
-  color: #ffd100;
+  color: #325daf;
   display: inline-block;
 }
 
@@ -99,7 +127,7 @@ body {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #ffd100;
+  background-color: #325daf;
   transition: width 0.3s ease-in;
 }
 
@@ -124,11 +152,11 @@ p {
   line-height: 1.5rem;
 }
 
-
 .heading {
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
+  color: #325daf;
 }
 
 .form-wrapper {
@@ -146,43 +174,91 @@ p {
 
 .form-control > input {
   height: 30px;
-  border: 1px solid #242a2d;
+  border: 1px solid #325daf;
   padding: 5px 20px;
 }
 
 .form-control > select {
   height: 30px;
-  border: 1px solid #242a2d;
+  border: 1px solid #325daf;
   padding: 5px 20px;
 }
 
 .form-control > button {
   height: 30px;
   width: 100px;
-  border: 1px solid #242a2d;
+  border: 1px solid #325daf;
   padding: 5px 20px;
-  color: white;
+  color: #325daf;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
-  background-color: #242a2d;
+  background-color: #ffffff;
 }
 
 .footer-wrapper {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  margin: auto;
 }
 
 .footer {
+  background-color: #325daf;
   height: 70px;
   width: 100%;
-  background-color: #242a2d;
   padding: 20px 40px;
 }
 
 .footer > p {
-  font-size: smaller;
-  color: white;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.footer-container {
+  background-color: #2953a1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+.nav-items-arrow {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-nav-links > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
 }
 
 @media screen and (max-width: 500px) {
