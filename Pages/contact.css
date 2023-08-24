@@ -155,7 +155,7 @@ p {
 .heading {
   font-family: "Rubik", sans-serif;
   text-align: center;
-  color: #325daf;
+  color: #ffffff;
   font-size: 2.5rem;
 }
 
@@ -174,7 +174,7 @@ p {
   padding: 0px 40px;
 }
 
-.form-control span{
+.form-control span {
   padding: 5px 0px;
 }
 
@@ -183,14 +183,14 @@ p {
   font-weight: 600;
 }
 
-.form-control textarea{
+.form-control textarea {
   padding: 15px;
   width: 100%;
   outline: none;
   height: 140px;
 }
 
-.form-control textarea:focus{
+.form-control textarea:focus {
   outline: 2px solid #325daf;
 }
 
@@ -203,12 +203,11 @@ p {
   outline: none;
 }
 
-input:focus{
+input:focus {
   outline: 2px solid #325daf;
 }
 
-
-.form-control input::placeholder{
+.form-control input::placeholder {
   padding: 5px 0px;
   opacity: 0.8;
 }
@@ -333,15 +332,16 @@ input:focus{
     position: absolute;
     top: 75px;
     z-index: 20;
-    background-color: #323a3d;
+    background-color: #ffffff;
     flex-direction: column;
     height: 100%;
     width: 100%;
-    color: white;
+    color: #325daf;
     padding: 20px 40px;
     transform: translateX(100%);
     transition: transform 750ms ease-in-out;
     font-size: 1rem;
+    gap: 10px;
   }
 
   .nav-links {
@@ -349,8 +349,19 @@ input:focus{
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
-    color: white;
+    color: #325daf;
     display: inline-block;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .nav-links::after {
@@ -358,7 +369,7 @@ input:focus{
     display: block;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: #325daf;
     transition: width 0.3s ease-in;
   }
   .nav-links:hover::after {
@@ -381,7 +392,7 @@ input:focus{
   .hamburger div {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: #325daf;
     margin: 5px;
     transform: all 0.3s ease;
   }
@@ -397,7 +408,7 @@ input:focus{
   }
 
   .drop-down {
-    background-color: #242a2d;
+    background-color: #ffffff;
     padding: 20px;
     width: 100%;
     opacity: 0;
@@ -411,7 +422,7 @@ input:focus{
 
   .drop-down > a {
     padding: 10px 0px;
-    color: #ffd100;
+    color: #325daf;
   }
 
   .toggle .line1 {
@@ -433,10 +444,81 @@ input:focus{
     text-align: center;
   }
 
+  .main-wrapper {
+    padding: 20px 20px 10px 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .form-wrapper {
     display: flex;
-    width: 200px;
+    width: 100%;
     flex-direction: column;
     height: 100%;
+  }
+
+  .form-control {
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .left-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0px;
+  }
+
+  .left-form div {
+    padding: 0px 0px;
+  }
+
+  .right-form {
+    width: 100%;
+    padding: 5px 0px;
+    margin-left: 0px;
+  }
+
+  .right-form div {
+    padding: 0px 0px;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer {
+    height: auto;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #325daf;
+  }
+
+  .footer > p {
+    font-size: 10px;
+  }
+
+  .footer-container {
+    padding: 0px 20px;
+  }
+
+  .nav-container {
+    gap: 10px;
+  }
+
+  .nav-items-arrow {
+    display: none;
+  }
+
+  .footer-heading {
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .footer-nav-links > a {
+    font-size: 6px;
   }
 }

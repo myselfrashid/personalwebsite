@@ -50,14 +50,14 @@ document.documentElement.addEventListener("click", function () {
 });
 
 let images = [
-  "./Assets/background.jpg",
-  "./Assets/background1.jpg",
-  "./Assets/background2.jpg",
-  "./Assets/background3.png",
+  "./Assets/home-background1.jpg",
+  "./Assets/home-background2.jpg",
+  "./Assets/home-background3.jpeg",
 ];
 
 let index = 0;
 const backgroundImage = document.querySelector(".background-image");
+
 
 const change = () => {
   backgroundImage.src = images[index];

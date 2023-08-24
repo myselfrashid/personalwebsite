@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;800&display=swap");
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -12,7 +12,6 @@ body {
 
 .main-content {
   color: black;
-  overflow: hidden;
 }
 
 p {
@@ -138,14 +137,21 @@ main {
 }
 
 .main-content {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-inline: 40px;
-  animation: title;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
+  margin: 20px 40px;
+  animation: title 1s alternate ease-in;
   height: 100%;
+}
+
+.main-content li {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 20px;
+  color: #ffffff;
 }
 
 .heading {
@@ -163,6 +169,30 @@ main {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #325daf;
+  padding: 20px 40px;
+  gap: 40px;
+  border-radius: 25px;
+  margin: 10px 0px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  height: 150px;
+}
+
+.usp {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Wix Madefor Display", sans-serif;
+  word-spacing: 10px;
+  text-align: justify;
 }
 
 .footer-wrapper {
@@ -241,15 +271,16 @@ main {
     position: absolute;
     top: 75px;
     z-index: 20;
-    background-color: #323a3d;
+    background-color: #ffffff;
     flex-direction: column;
     height: 100%;
     width: 100%;
-    color: #242424;
+    color: #325daf;
     padding: 20px 40px;
     transform: translateX(100%);
     transition: transform 750ms ease-in-out;
     font-size: 1rem;
+    gap: 10px;
   }
 
   .nav-link {
@@ -263,7 +294,7 @@ main {
   }
 
   .drop-down {
-    background-color: #242a2d;
+    background-color: #ffffff;
     padding: 20px;
     width: 100%;
     opacity: 0;
@@ -277,7 +308,7 @@ main {
 
   .drop-down > a {
     padding: 10px 0px;
-    color: #ffd100;
+    color: #325daf;
   }
 
   .nav-links {
@@ -285,8 +316,19 @@ main {
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
-    color: #ffd100;
+    color: #325daf;
     display: inline-block;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .nav-links::after {
@@ -297,6 +339,7 @@ main {
     background-color: white;
     transition: width 0.3s ease-in;
   }
+
   .nav-links:hover::after {
     width: 100%;
   }
@@ -317,7 +360,7 @@ main {
   .hamburger div {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: #325daf;
     margin: 5px;
     transform: all 0.3s ease;
   }
@@ -334,5 +377,72 @@ main {
   .toggle .line3 {
     transform: rotate(-45deg) translate(7px, -7px);
     transition: all 0.25s ease-in;
+  }
+
+  .main-content {
+    font-size: 12px;
+    margin: 20px 20px;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #325daf;
+    padding: 20px 20px;
+    gap: 20px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    font-size: 13px;
+    color: #ffffff;
+  }
+
+  .profile-picture {
+    border-radius: 50%;
+    height: 150px;
+  }
+
+  .usp {
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing: 0px;
+    text-align: left;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer {
+    height: auto;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #325daf;
+  }
+
+  .footer > p {
+    font-size: 10px;
+  }
+
+  .footer-container {
+    padding: 0px 20px;
+  }
+
+  .nav-container {
+    gap: 10px;
+  }
+
+  .nav-items-arrow {
+    display: none;
+  }
+
+  .footer-heading {
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .footer-nav-links > a {
+    font-size: 6px;
   }
 }

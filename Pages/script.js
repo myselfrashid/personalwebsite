@@ -16,7 +16,7 @@ toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("toggle");
 });
 
-let link = document.getElementsByClassName("nav-link")[1];
+let link = document.querySelector(".services");
 let dropDown = document.querySelector(".drop-down");
 
 const toggleDropdown = function () {
